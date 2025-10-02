@@ -12,6 +12,8 @@ html{
     height: 100vh;
 }
 body{
+    display: flex;
+    flex-direction: column;
     margin: 0;
     height: 100%;
     background-color: var(--background-color);
@@ -26,7 +28,6 @@ body{
     margin: 0;
 }
 .menu{
-
     margin: 0;
     list-style-type: none;
     padding: 16px 10px;
@@ -55,4 +56,15 @@ body{
 }
 .submenu-childhover:hover{
     border-radius: 5px;
+}
+.main{
+    display: flex;
+    flex-grow: 1; 
+}
+.main-content{
+    padding: 20px
+}
+.footer{
+    background-color: var(--secondary-color);
+    text-align: center;
 }
