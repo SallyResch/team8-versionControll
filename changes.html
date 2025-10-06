@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/changes.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/changes.css" />
     <link
       rel="icon"
       type="image/png"
@@ -39,16 +39,30 @@
             </li>
         </ul>
       </nav>
-    </header>
+  </header>
     <main class="main">
-      <div class="changes-content">
+      <div class="main-content">
         <h2 class="content-title">Git Changes</h2>
         <div class="content-section">
           <article class="explanation">
-            If you have done some changes to one file or different files you
+            If you have done some changes to one file or many different files you
             need to add it to the remote repository on Github. To do that you
             need to first check what changes you made and if you want to keep
-            every single change or just want to keep one change.
+            every single change or just want to keep one specific change.
+          </article>
+          <article class="explanation">
+            There are different kind of states that a file can be in throughout your workflow.
+            Here they are:
+            <div class="file-states list">
+              <span class="file-state">Untracked</span>
+                <p class="state-explanation">New files not yet tracked by Git</p>
+              <span class="file-state">Modified</span>
+                <p class="state-explanation">Files that have been changed</p>
+              <span class="file-state">Staged</span>
+                <p class="state-explanation">Changes ready to be commited</p>
+              <span class="file-state">Commited</span>
+                <p class="state-explanation">Changes saved to local repository</p>
+            </div>
           </article>
           <div class="list">
             <h4 class="list-title">Git commands</h4>
