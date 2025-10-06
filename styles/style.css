@@ -96,3 +96,8 @@ a:hover {
   color: var(--accent-color);
   text-decoration: none;
 }
+
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
