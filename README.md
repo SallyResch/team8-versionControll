@@ -42,14 +42,13 @@ Presents the project team with styled member cards and subtle animations.
 
 ## 🪄 Features
 ✅ Responsive layout  
-
----
-
-## 🏁 License
-This project is open source and available under the **MIT License**.
 ✅ Dropdown navigation menu  
 ✅ Subtle hover and animation effects  
 ✅ Organized modular CSS  
 ✅ Educational Git command examples  
 
+---
+
+## 🏁 License
+This project is open source and available under the **MIT License**.
 
