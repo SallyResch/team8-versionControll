@@ -10,9 +10,9 @@ This project was developed as part of a learning assignment to demonstrate knowl
 ---
 
 ## 👥 Team Members
+- **Sally**
 - **Arash**
 - **Sandra**
-- **Sally**
 
 ## 🧩 Pages Overview
 
