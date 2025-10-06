@@ -52,11 +52,96 @@
           </article>
           <div class="list">
             <h4 class="list-title">Git commands</h4>
-            <div class="list-item">git checkout -b nameOfNewBranch</div>
-            <div class="list-item">git add .</div>
-            <div class="list-item">git add filename.html</div>
-            <div class="list-item">git commit -m "message"</div>
-            <div class="list-item">git push</div>
+            <div class="list-item">
+              <div>
+                <code>
+                  git status
+                </code>
+                <span>Check status of your files</span>
+              </div>
+              <p>Shows modified, staged, and untracked files</p>
+            </div>
+            <div class="list-item">
+              <div>
+                <code>
+                  git checkout "branchName"
+                </code>
+                <span>Change to another branch to maybe pull changes from that branch</span>
+              </div>
+              <p>Changes branch from the current one to the one you choose</p>
+            </div>
+            <div class="list-item">
+              <div>
+                <code>
+                git add .
+                </code>
+                <span>Stage all changes</span>
+              </div>
+              <p>Adds all modified and new files</p>
+            </div>
+            <div class="list-item">
+              <div>
+                <code>
+                  git add "filename"
+                </code>
+                <span>Stage a specific file</span>
+              </div>
+              <p>Adds a specific file to the staging area</p>
+            </div>
+            <div class="list-item">
+              <div>
+                <code>
+                  git commit -m "message"
+                </code>
+                <span>Commit staged changes</span>
+              </div>
+              <p>Creates a new commit with a message</p>
+            </div>
+            <div class="list-item">
+              <div>
+                <code>
+                  git push origin "branchName"
+                </code>
+                <span>Push commits to remote</span>
+              </div>
+              <p>Uploads commits to GitHub</p>
+            </div>
+            <div class="list-item">
+              <div>
+                <code>
+                  git checkout -- filename
+                </code>
+                <span>removes all changes made in that specific file that is not commited</span>
+              </div>
+              <p>brings the file to version of last commit (HEAD) of the file</p>
+            </div>
+            <div class="list-item">
+              <div>
+                <code>
+                  git reset HEAD filename
+                </code>
+                <span>Unstage a file</span>
+              </div>
+              <p>Unstages a file</p>
+            </div>
+            <div class="list-item">
+              <div>
+                <code>
+                  git commit --amend
+                </code>
+                <span>Modify the last commit</span>
+              </div>
+              <p>Changes the last commit</p>
+            </div>
+            <div class="list-item">
+              <div>
+                <code>
+                  git revert "commitName"
+                </code>
+                <span>Safely undo a commit</span>
+              </div>
+              <p>Reverts a commit in a safeway</p>
+            </div>
           </div>
         </div>
       </div>
