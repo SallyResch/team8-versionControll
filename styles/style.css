@@ -5,13 +5,16 @@
   --text-color-primary: black;
   --text-color-secondary: whitesmoke;
 }
+
 * {
   box-sizing: border-box;
 }
+
 html {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -26,26 +29,32 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .header-title {
   margin: 0;
   text-align: center;
 }
+
 .menu {
   margin: 0;
   list-style-type: none;
   padding: 16px 10px;
 }
+
 .menu li {
   display: inline-block;
   padding: 0 10px;
 }
+
 .submenu-hover {
   position: relative;
 }
+
 .submenu-hover:hover .submenu {
   display: block;
   border-radius: 5px;
 }
+
 .submenu {
   display: none;
   position: absolute;
@@ -53,13 +62,16 @@ body {
   top: 100%;
   background-color: var(--secondary-color);
 }
+
 .submenu li {
   display: block;
   padding: 5px;
 }
+
 .submenu-childhover:hover {
   border-radius: 5px;
 }
+
 .main {
   display: flex;
   flex-grow: 1;
@@ -69,6 +81,7 @@ body {
 .main-content {
   padding: 20px;
 }
+
 .footer {
   background-color: var(--secondary-color);
   text-align: center;
