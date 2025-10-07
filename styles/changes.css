@@ -21,14 +21,20 @@
     border-radius: 5px;
     margin-bottom: 15px;
 }
+
 .state-div:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
 .span-state{
     background-color: var(--background-color);
     padding: 5px;
     border-radius: 5px;
     border: 1px solid var(--text-color-primary);
+}
+
+.best-practice-section{
+  margin-bottom: 35px;
 }
 
 .list{
@@ -44,10 +50,12 @@
     padding: 10px;
     margin-bottom: 15px;
 }
+
 .list-item-header{
     display: flex;
     flex-direction: column;
 }
+
 .list-item-command{
     background-color: var(--text-color-primary);
     color: var(--text-color-secondary);
@@ -55,6 +63,7 @@
     font-size: 14px;
     margin: 5px;
 }
+
 .list-item-description{
     margin: 0;
 }
