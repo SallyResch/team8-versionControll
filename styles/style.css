@@ -115,5 +115,25 @@ a:hover {
     align-items: center;
     gap: 10px;
   }
-  
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--secondary-color, #0077b6);
+  font-size: 0.95rem;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #005f8a;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--secondary-color, #0077b6);
 }
