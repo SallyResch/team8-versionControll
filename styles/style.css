@@ -11,7 +11,7 @@
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100vh;
 }
 
@@ -33,43 +33,54 @@ body {
 .header-title {
   margin: 0;
   text-align: center;
+  padding: 20px;
 }
 
-.menu {
+nav {
+  background: var(--secondary-color);
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
   margin: 0;
-  list-style-type: none;
-  padding: 16px 10px;
 }
 
-.menu li {
-  display: inline-block;
-  padding: 0 10px;
+nav a {
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.submenu-hover {
-  position: relative;
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
 }
 
-.submenu-hover:hover .submenu {
-  display: block;
-  border-radius: 5px;
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
-.submenu {
-  display: none;
-  position: absolute;
-  padding: 8px;
-  top: 100%;
-  background-color: var(--secondary-color);
+.active {
+  text-decoration: underline;
 }
 
-.submenu li {
-  display: block;
-  padding: 5px;
-}
-
-.submenu-childhover:hover {
-  border-radius: 5px;
+nav a {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .main {
@@ -84,6 +95,7 @@ body {
 
 .footer {
   background-color: var(--secondary-color);
+  color: var(--text-color-secondary);
   text-align: center;
 }
 
@@ -97,7 +109,11 @@ a:hover {
   text-decoration: none;
 }
 
-nav a[aria-current="page"] {
-  text-decoration: underline;
-  text-underline-offset: 6px;
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
 }
