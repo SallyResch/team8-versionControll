@@ -1,9 +1,17 @@
+.nav-section{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--secondary-color);
+}
 .explanation{
     padding-bottom: 25px;
 }
 
 .file-states-content{
-    background-color: var(--accent-color);
     border-radius: 10px;
     border: 1px solid var(--text-color-primary);
     margin-top: 20px;
@@ -15,7 +23,7 @@
 }
 
 .state-div{
-    background-color: var(--secondary-color);
+    background-color: var(--text-color-secondary);
     border: solid 1px var(--text-color-primary);
     padding-top: 5px;
     border-radius: 5px;
@@ -27,7 +35,7 @@
 }
 
 .span-state{
-    background-color: var(--background-color);
+    background-color: var(--accent-color);
     padding: 5px;
     border-radius: 5px;
     border: 1px solid var(--text-color-primary);
@@ -45,10 +53,11 @@
 }
 
 .list-item{
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 15px;
+    border: 1px solid black;
 }
 .list-item:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -60,8 +69,7 @@
 }
 
 .list-item-command{
-    background-color: var(--text-color-primary);
-    color: var(--text-color-secondary);
+    background-color: var(--accent-color);
     padding: 5px;
     font-size: 14px;
     margin: 5px;
@@ -69,4 +77,13 @@
 
 .list-item-description{
     margin: 0;
+}
+@media screen and (min-width:550px){
+    .nav-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-bottom: 2px solid var(--secondary-color);
+    }
 }
