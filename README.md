@@ -9,10 +9,15 @@ This project was developed as part of a learning assignment to demonstrate knowl
 
 ---
 
+
 ## 👥 Team Members
-- **Sally**
-- **Arash**
-- **Sandra**
+
+- [🐙 Sally](https://github.com/SallyResch)
+- [🐙 Arash](https://github.com/ArashSafarighouzhdi)
+- [🐙 Sandra](https://github.com/ristoAle)
+
+
+---
 
 ## 🧩 Pages Overview
 
