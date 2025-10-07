@@ -46,14 +46,13 @@
 }
 
 .list{
-    background-color: var(--text-color-secondary);
     border-radius: 10px;
     border: 1px solid var(--text-color-primary);
     padding: 25px;
 }
 
 .list-item{
-    background-color: var(--primary-color);
+    background-color: var( --text-color-secondary);
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 15px;
