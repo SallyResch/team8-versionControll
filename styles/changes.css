@@ -28,5 +28,5 @@
     background-color: var(--background-color);
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid var(--third-color);
+    border: 1px solid var(--text-color-primary);
 }
