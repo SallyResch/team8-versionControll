@@ -24,9 +24,37 @@
 .state-div:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-.file-state{
+.span-state{
     background-color: var(--background-color);
     padding: 5px;
     border-radius: 5px;
     border: 1px solid var(--text-color-primary);
+}
+
+.list{
+    background-color: var(--text-color-secondary);
+    border-radius: 10px;
+    border: 1px solid var(--text-color-primary);
+    padding: 25px;
+}
+
+.list-item{
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.list-item-header{
+    display: flex;
+    flex-direction: column;
+}
+.list-item-command{
+    background-color: var(--text-color-primary);
+    color: var(--text-color-secondary);
+    padding: 5px;
+    font-size: 14px;
+    margin: 5px;
+}
+.list-item-description{
+    margin: 0;
 }
