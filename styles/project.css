@@ -1,6 +1,15 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
 ul li {
-  display: inline;
-  margin-right: 20px;
+  margin: 0%;
 }
 
 .article-card {
@@ -47,4 +56,22 @@ code {
   background: var(--accent-color);
   padding: 2px 5px;
   border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .article-card {
+    width: 100%;
+    padding: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  ul li a {
+    display: block;
+    width: 80%;
+    text-align: center;
+  }
 }
