@@ -1,48 +1,32 @@
-.main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.changes-content{
-    max-width: 70%;
-}
-
-.content-title ,.list-title{
-    text-align: center;
-}
-
-.content-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .explanation{
-    padding: 30px;
+    padding-bottom: 25px;
 }
 
-.list{
-    background-color: var(--secondary-color);
-    margin: 30px 30px 30px;
+.file-states-content{
+    background-color: var(--accent-color);
+    border-radius: 10px;
     border: 1px solid var(--text-color-primary);
-    max-width: 500px;
-    min-width: 320px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
 }
 
-.list-item{
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 15px;
-    width: 70%;
-    margin-bottom: 20px;
-    background-color: var(--background-color);
+.list-title{
+    margin: 0 0 10px 0;
 }
-.list-item:hover{
+
+.state-div{
+    background-color: var(--secondary-color);
+    border: solid 1px var(--text-color-primary);
+    padding-top: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.state-div:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    width: 72%;
+}
+.file-state{
+    background-color: var(--background-color);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--third-color);
 }
