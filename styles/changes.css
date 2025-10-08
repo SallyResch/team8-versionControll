@@ -13,9 +13,7 @@
 
 .file-states-content{
     border-radius: 10px;
-    border: 1px solid var(--text-color-primary);
     margin-top: 20px;
-    padding: 15px;
 }
 
 .list-title{
@@ -24,8 +22,7 @@
 
 .state-div{
     background-color: var(--text-color-secondary);
-    border: solid 1px var(--text-color-primary);
-    padding-top: 5px;
+    padding: 0 0 5px 5px;
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -38,7 +35,6 @@
     background-color: var(--accent-color);
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid var(--text-color-primary);
 }
 
 .best-practice-section{
@@ -47,8 +43,6 @@
 
 .list{
     border-radius: 10px;
-    border: 1px solid var(--text-color-primary);
-    padding: 25px;
 }
 
 .list-item{
@@ -56,7 +50,6 @@
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid black;
 }
 .list-item:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
