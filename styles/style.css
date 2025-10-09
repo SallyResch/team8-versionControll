@@ -91,8 +91,6 @@ nav a {
     position:fixed;
     bottom: 10px;
     right: 10px;
-    font-family: cursive;
-    color: black;
     padding: 12px;
     border-radius: 5px;
     z-index: 1000;
