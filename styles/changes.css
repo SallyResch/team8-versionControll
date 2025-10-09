@@ -7,9 +7,7 @@
   justify-content: center;
   border-bottom: 2px solid var(--secondary-color);
 }
-.explanation {
-  padding-bottom: 25px;
-}
+
 
 .file-states-content {
   border-radius: 10px;
@@ -38,7 +36,7 @@
 }
 
 .best-practice-section {
-margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .list {
@@ -71,12 +69,12 @@ margin-bottom: 35px;
 .list-item-description {
   margin: 0;
 }
-@media screen and (min-width:550px){
+@media screen and (min-width: 550px) {
   .nav-section {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      border-bottom: 2px solid var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 2px solid var(--secondary-color);
   }
 }
