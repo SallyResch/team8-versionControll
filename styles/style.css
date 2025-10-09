@@ -157,3 +157,8 @@ a:hover {
   height: 16px;
   color: var(--secondary-color, #0077b6);
 }
+
+.explanation {
+  padding-bottom: 25px;
+  text-align: justify;
+}
