@@ -23,7 +23,7 @@
 .state-div {
   background-color: var(--text-color-secondary);
   border: solid 1px var(--text-color-primary);
-  padding-top: 5px;
+  padding: 10px 10px 2px;
   border-radius: 5px;
   margin-bottom: 15px;
 }
