@@ -48,37 +48,31 @@
         <article class="article-card">
           <h2 id="why-branching">Why is branching important?</h2>
           <p>
-           Branching allows developers to work on new features, bug fixes, or experiments without affecting the main project.
-              It promotes collaboration, parallel development, and safer code integration.
-              <ol>
-                <li>Keeps the main branch (often called <code>main</code> or <code>master</code> ) clean and stable.</li>
-                <li>Reduces conflicts when multiple developers are working simultaneously.</li>
-                <li>Makes collaboration easier by isolating untested or experimental code.</li>
-                <li>Developers can merge their work back into the main branch only after review and testing.</li>
-              </ol>
+           Branching allows developers to work on new features, bug fixes, or experiments without affecting the main project. It promotes collaboration, parallel development, and safer code integration.
           </p>
+            <ol>
+              <li>Keeps the main branch (often called <code>main</code> or <code>master</code> ) clean and stable.</li>
+              <li>Reduces conflicts when multiple developers are working simultaneously.</li>
+              <li>Makes collaboration easier by isolating untested or experimental code.</li>
+              <li>Developers can merge their work back into the main branch only after review and testing.</li>
+            </ol>
 
           <h2 id="commands">Git Commands for Branching</h2>
           <h3>Git Commands for Branching</h3>
 
-          <p>Create a new branch:
-            <pre><code>git checkout -b branch-name</code></pre>
-        </p>
-        <p>Switch to an existing branch:
-        <pre><code>git checkout branch-name</code></pre>
-        </p>
-        <p>Merge your branch into main:
+          <p>Create a new branch:</p>
+          <pre><code>git checkout -b branch-name</code></pre>
+          <p>Switch to an existing branch:</p>
+          <pre><code>git checkout branch-name</code></pre>
+          <p>Merge your branch into main:</p>
           <pre><code>git checkout main</code></pre>
           <pre><code>git pull</code></pre>
           <pre><code>git merge your-branch</code></pre>
           <pre><code>git push</code></pre>
-        </p>
-        <p>Close (delete) a branch locally:
-            <pre><code>git branch -d branch-name</code></pre>
-        </p>
-        <p>Delete a branch from the remote (e.g., GitHub):
-            <pre><code>git push origin --delete branch-name</code></pre>
-        </p>
+          <p>Close (delete) a branch locally:</p>
+          <pre><code>git branch -d branch-name</code></pre>
+          <p>Delete a branch from the remote (e.g., GitHub):</p>
+          <pre><code>git push origin --delete branch-name</code></pre>
         </article>
       </div>
     </main>

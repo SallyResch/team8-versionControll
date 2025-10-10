@@ -13,7 +13,6 @@ ul li {
 }
 
 .article-card {
-  background: var(--card-background);
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
@@ -41,7 +40,7 @@ ul li {
 }
 
 pre {
-  background: var (--primary-color);
+  background: var(--primary-color);
   padding: 10px;
   border-radius: 6px;
   overflow-x: auto;
