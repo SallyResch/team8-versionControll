@@ -11,33 +11,36 @@
       sizes="64x64"
       href="./icons/favicon.png"
     />
-        <link rel="stylesheet" href="./styles/typography.css" />
+    <link rel="stylesheet" href="./styles/typography.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Projects</title>
+    <title>Projects | The Git Guide</title>
   </head>
   <body>
     <header class="header">
-      <h1 class="header-title">The Git Guide</h1>
+      <div class="logo">The Git Guide</div>
       <nav id="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="project.html" class="active" aria-current="page">Projects</a></li>
+          <li>
+            <a href="project.html" class="active" aria-current="page"
+              >Projects</a
+            >
+          </li>
           <li><a href="changes.html">Changes</a></li>
           <li><a href="branching.html">Branching</a></li>
           <li><a href="about.html">About Us</a></li>
         </ul>
       </nav>
     </header>
-
     <main class="main">
-      <div class="article-container">
-        <h1 class="header-title">Git & GitHub</h1>
-        <div class="header-title">
+      <div class="main-content">
+        <h1 class="header-title">Projects in Git</h1>
+        <div>
           <ul>
             <li><a href="#why-remote">Why remote repos</a></li>
             <li><a href="#create-repo">Create on GitHub</a></li>
@@ -73,25 +76,22 @@
 
           <h2 id="commands">Git commands you will often need</h2>
           <h3>Create a project locally</h3>
-          <pre><code>mkdir my-first-project
-cd my-first-project
-git init
-</code></pre>
+          <pre><code>mkdir my-first-project</code></pre>
+          <pre><code>cd my-first-project</code></pre>
+          <pre><code>git init</code></pre>
 
           <h3>Link local repo to GitHub</h3>
-          <pre><code>git remote add origin https://github.com/username/my-first-project.git
-git add .
-git commit -m "Initial commit"
-git push -u origin main
-</code></pre>
+          <pre><code>git remote add origin https://github.com/username/my-first-project.git</code></pre>
+          <pre><code>git add .</code></pre>
+          <pre><code>git commit -m "Initial commit"</code></pre>
+          <pre><code>git push -u origin main</code></pre>
 
           <h3>Useful everyday commands</h3>
-          <pre><code>git status
-git log
-git pull origin main
-git push
-git checkout -b feature/branch
-</code></pre>
+          <pre><code>git status</code></pre>
+          <pre><code>git log</code></pre>
+          <pre><code>git pull origin main</code></pre>
+          <pre><code>git push</code></pre>
+          <pre><code>git checkout -b feature/branch</code></pre>
 
           <h2 id="contribute">How others can contribute</h2>
           <p>
@@ -109,9 +109,9 @@ git checkout -b feature/branch
             </li>
             <li>
               Commit & push:
-              <pre><code>git add .
-git commit -m "Describe changes"
-git push -u origin feature/short-description</code></pre>
+              <pre><code>git add .</code></pre>
+              <pre><code>git commit -m "Describe changes"</code></pre>
+              <pre><code>git push -u origin feature/short-description</code></pre>
             </li>
             <li>Open Pull Request on GitHub.</li>
           </ol>

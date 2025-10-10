@@ -18,11 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Branching</title>
+    <title>Branching | The Git Guide</title>
   </head>
   <body>
     <header class="header">
-      <h1 class="header-title">The Git Guide</h1>
+      <div class=logo>The Git Guide</div>
        <nav id="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -33,14 +33,13 @@
         </ul>
       </nav>
     </header>
-
     <main class="main">
-          <a href="#nav" class="go-to-menu">
-            <h5 id="go-to-menu-arrowup">Go up &#129061;</h5>
-          </a>
-      <div class="article-container">
+      <a href="#nav" class="go-to-menu">
+        <h5 id="go-to-menu-arrowup">Go up &#129061;</h5>
+      </a>
+      <div class="main-content">
         <h1 class="header-title">Branching in Git</h1>
-        <div class="header-title">
+        <div>
           <ul>
             <li><a href="#why-branching">Why is branching important?</a></li>
             <li><a href="#commands">Git Commands for Branching</a></li>
@@ -52,7 +51,7 @@
            Branching allows developers to work on new features, bug fixes, or experiments without affecting the main project.
               It promotes collaboration, parallel development, and safer code integration.
               <ol>
-                <li>Keeps the main branch (often called <code>main</code>main or <code>master</code> ) clean and stable.</li>
+                <li>Keeps the main branch (often called <code>main</code> or <code>master</code> ) clean and stable.</li>
                 <li>Reduces conflicts when multiple developers are working simultaneously.</li>
                 <li>Makes collaboration easier by isolating untested or experimental code.</li>
                 <li>Developers can merge their work back into the main branch only after review and testing.</li>
@@ -68,11 +67,11 @@
         <p>Switch to an existing branch:
         <pre><code>git checkout branch-name</code></pre>
         </p>
-        <p>Merge your branch into main:<pre><code>git checkout main
-git pull
-git merge your-branch
-git push
-</code></pre>
+        <p>Merge your branch into main:
+          <pre><code>git checkout main</code></pre>
+          <pre><code>git pull</code></pre>
+          <pre><code>git merge your-branch</code></pre>
+          <pre><code>git push</code></pre>
         </p>
         <p>Close (delete) a branch locally:
             <pre><code>git branch -d branch-name</code></pre>
