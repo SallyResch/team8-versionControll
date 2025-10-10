@@ -5,6 +5,9 @@
 **The Git Guide** is a simple, educational website created to help beginners understand **Git** and **GitHub** concepts.  
 It covers version control fundamentals — such as creating repositories, making changes, branching, and collaboration — all through clean and responsive static web pages.
 
+🔗 **Live Demo:** https://sallyresch.github.io/team8-versionControll/
+
+
 This project was developed as part of a learning assignment to demonstrate knowledge of HTML, CSS, Git, and GitHub workflows.
 
 ---
