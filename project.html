@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/project.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./icons/favicon.png"
+    />
+    <link rel="stylesheet" href="./styles/typography.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projects | The Git Guide</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">The Git Guide</div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="project.html" class="active" aria-current="page">
+              Projects
+            </a>
+          </li>
+          <li><a href="changes.html">Changes</a></li>
+          <li><a href="branching.html">Branching</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main-content">
+        <h1 class="header-title">Projects in Git</h1>
+        <div>
+          <ul>
+            <li><a href="#why-remote">Why remote repos</a></li>
+            <li><a href="#create-repo">Create on GitHub</a></li>
+            <li><a href="#commands">Git commands</a></li>
+            <li><a href="#contribute">How to contribute</a></li>
+          </ul>
+        </div>
+        <article class="article-card">
+          <a href="#nav" class="go-to-menu">
+            <h5 id="go-to-menu-arrowup">Go up &#129061;</h5>
+          </a>
+          <h2 id="why-remote">Why remote repositories are necessary</h2>
+          <p>
+            Remote repositories (GitHub, GitLab, Bitbucket) are online copies of
+            your project that provide backup, collaboration, and version
+            history. They let you access your work from anywhere and share with
+            teammates.
+          </p>
+
+          <h2 id="create-repo">Steps for creating a project on GitHub</h2>
+          <ol>
+            <li>
+              Sign in to
+              <a href="https://github.com" target="_blank">GitHub</a>.
+            </li>
+            <li>Click <strong>New repository</strong>.</li>
+            <li>
+              Name it (e.g. <code>my-first-project</code>) and set visibility.
+            </li>
+            <li>(Optional) Initialize with README/.gitignore/license.</li>
+            <li>Click <strong>Create repository</strong>.</li>
+          </ol>
+
+          <h2 id="commands">Git commands you will often need</h2>
+          <h3>Create a project locally</h3>
+          <pre><code>mkdir my-first-project</code></pre>
+          <pre><code>cd my-first-project</code></pre>
+          <pre><code>git init</code></pre>
+
+          <h3>Link local repo to GitHub</h3>
+          <pre><code>git remote add origin https://github.com/username/my-first-project.git</code></pre>
+          <pre><code>git add .</code></pre>
+          <pre><code>git commit -m "Initial commit"</code></pre>
+          <pre><code>git push -u origin main</code></pre>
+
+          <h3>Useful everyday commands</h3>
+          <pre><code>git status</code></pre>
+          <pre><code>git log</code></pre>
+          <pre><code>git pull origin main</code></pre>
+          <pre><code>git push</code></pre>
+          <pre><code>git checkout -b feature/branch</code></pre>
+
+          <h2 id="contribute">How others can contribute</h2>
+          <p>
+            Contributors can fork/clone your repo, create branches, and open
+            Pull Requests for review before merging into <code>main</code>.
+          </p>
+          <ol>
+            <li>
+              Clone:
+              <pre><code>git clone https://github.com/username/project.git</code></pre>
+            </li>
+            <li>
+              Create branch:
+              <pre><code>git checkout -b feature/short-description</code></pre>
+            </li>
+            <li>
+              Commit & push:
+              <pre><code>git add .</code></pre>
+              <pre><code>git commit -m "Describe changes"</code></pre>
+              <pre><code>git push -u origin feature/short-description</code></pre>
+            </li>
+            <li>Open Pull Request on GitHub.</li>
+          </ol>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>&copy; Arash Sandra Sally 2025</h3>
+      </div>
+    </footer>
+  </body>
+</html>

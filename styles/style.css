@@ -1,0 +1,165 @@
+:root {
+  --background-color: #fefae0;
+  --secondary-color: #a2a2a2;
+  --accent-color: #ffb8a2;
+  --text-color-primary: black;
+  --text-color-secondary: whitesmoke;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+  background-color: var(--background-color);
+}
+
+.header {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.logo{
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  background: var(--secondary-color);
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.go-to-menu {
+    background-color: var(--accent-color);
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.go-to-menu:hover {
+    background-color: #ffb8a2b0;
+    color: black;
+}
+
+#go-to-menu-arrowup {
+  margin: 0;
+}
+
+.main-content {
+  padding: 20px;
+  min-width: 320px;
+  max-width: 768px;
+}
+
+.article-card {
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 10px 0;
+  padding: 16px;
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: var(--accent-color);
+}
+
+.mail-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--secondary-color, #0077b6);
+}
+
+.explanation {
+  padding-bottom: 25px;
+  text-align: justify;
+}

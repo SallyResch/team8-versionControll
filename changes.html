@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/changes.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./icons/favicon.png"
+    />
+    <link rel="stylesheet" href="./styles/typography.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Changes | The Git Guide</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class=logo>The Git Guide</div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="changes.html" class="active" aria-current="page">Changes</a></li>
+          <li><a href="branching.html">Branching</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+  </header>
+    <main class="main">
+      <div class="main-content">
+        <h1 class="header-title">Changes in Git</h1>
+          <ul class="nav-section">
+            <li><a href="#changes-explanation">Changes description</a></li>
+            <li><a href="#step-by-step">How to do it</a></li>
+            <li><a href="#commands">Git Commands for Changes</a></li>
+          </ul>
+        <div class="article-card">
+          <a href="#nav" class="go-to-menu">
+            <h5 id="go-to-menu-arrowup">Go up &#129061;</h5>
+          </a>
+          <article class="explanation" id="changes-explanation">
+            If you have done some changes to one file or many different files you
+            need to add it to the remote repository on Github. To do that you
+            need to first check what changes you made and if you want to keep
+            every single change or just want to keep one specific change.
+          </article>
+          <article class="explanation">
+            There are different kind of states that a file can be in throughout your workflow.
+            <div class="file-states-content">
+              <div class="state-div">
+                <span class="span-state">Untracked</span>
+                  <p class="state-explanation">New files not yet tracked by Git</p>
+              </div>
+              <div class="state-div">
+                <span class="span-state">Modified</span>
+                  <p class="state-explanation">Files that have been changed</p>
+              </div>
+              <div class="state-div">
+                <span class="span-state">Staged</span>
+                  <p class="state-explanation">Changes ready to be commited</p>
+              </div>
+              <div class="state-div">
+                <span class="span-state">Commited</span>
+                  <p class="state-explanation">Changes saved to local repository</p>
+              </div>
+            </div>
+          </article>
+          <div class="best-practice-section">
+            <h2 class="list-title" id="step-by-step">Git changes guide - step-by-step:</h2>
+            <p class="best-practice-description">1. Review changes that you made</p>
+            <p class="best-practice-description">2. Add the changed files that you want with</p>
+              <code class="list-item-command">
+                git add filename
+              </code>
+            <p>or if you want to add all the changed files</p>
+              <code class="list-item-command">
+                git add .
+              </code>
+            <p class="best-practice-description">3. Commit the changes with</p>
+              <code class="list-item-command">
+                git commit -m "message"
+              </code>            
+            <p class="best-practice-description">4. Push the changes to the remote repository with</p>
+              <code class="list-item-command">
+                git push origin "branchName"
+              </code>
+          </div>
+          <div class="list">
+            <h2 class="list-title" id="commands">Git commands</h2>
+            <div class="list-item">
+              <div class="list-item-header">
+                <code class="list-item-command">
+                  git status
+                </code>
+                <span class="list-item-label">Check status of your files</span>
+              </div>
+              <p class="list-item-description">Shows modified, staged, and untracked files</p>
+            </div>
+            <div class="list-item">
+              <div class="list-item-header">
+                <code class="list-item-command">
+                  git checkout "branchName"
+                </code>
+                <span class="list-item-label">Change to another branch to maybe pull changes from that branch</span>
+              </div>
+              <p class="list-item-description">Changes branch from the current one to the one you choose</p>
+            </div>
+            <div class="list-item">
+              <div class="list-item-header">
+                <code class="list-item-command">
+                git add .
+                </code>
+                <span class="list-item-label">Stage all changes</span>
+              </div>
+              <p class="list-item-description">Adds all modified and new files</p>
+            </div>
+            <div class="list-item">
+              <div class="list-item-header">
+                <code class="list-item-command">
+                  git add "filename"
+                </code>
+                <span class="list-item-label">Stage a specific file</span>
+              </div>
+              <p class="list-item-description">Adds a specific file to the staging area</p>
+            </div>
+            <div class="list-item">
+              <div class="list-item-header">
+                <code class="list-item-command">
+                  git commit -m "message"
+                </code>
+                <span class="list-item-label">Commit staged changes</span>
+              </div>
+              <p class="list-item-description">Creates a new commit with a message</p>
+            </div>
+            <div class="list-item">
+              <div class="list-item-header">
+                <code class="list-item-command">
+                  git push origin "branchName"
+                </code>
+                <span class="list-item-label">Push commits to remote</span>
+              </div>
+              <p class="list-item-description">Uploads commits to GitHub</p>
+            </div>
+            <div class="list-item">
+              <div class="list-item-header">
+                <code class="list-item-command">
+                  git checkout -- filename
+                </code>
+                <span class="list-item-label">removes all changes made in that specific file that is not commited</span>
+              </div>
+              <p class="list-item-description">brings the file to version of last commit (HEAD) of the file</p>
+            </div>
+            <div class="list-item">
+              <div class="list-item-header">
+                <code class="list-item-command">
+                  git reset HEAD filename
+                </code>
+                <span class="list-item-label">Unstage a file</span>
+              </div>
+              <p class="list-item-description">Unstages a file</p>
+            </div>
+            <div class="list-item">
+              <div class="list-item-header">
+                <code class="list-item-command">
+                  git commit --amend
+                </code>
+                <span class="list-item-label">Modify the last commit</span>
+              </div>
+              <p class="list-item-description">Changes the last commit</p>
+            </div>
+            <div class="list-item">
+              <div class="list-item-header">
+                <code class="list-item-command">
+                  git revert "commitName"
+                </code>
+                <span class="list-item-label">Safely undo a commit</span>
+              </div>
+              <p class="list-item-description">Reverts a commit in a safeway</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>&copy; Arash Sandra Sally 2025</h3>
+      </div>
+    </footer>
+  </body>
+</html>

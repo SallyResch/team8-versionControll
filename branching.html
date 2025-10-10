@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/project.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./icons/favicon.png"
+    />
+    <link rel="stylesheet" href="./styles/typography.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Branching | The Git Guide</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class=logo>The Git Guide</div>
+       <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="changes.html" >Changes</a></li>
+          <li><a href="branching.html" class="active" aria-current="page">Branching</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <a href="#nav" class="go-to-menu">
+        <h5 id="go-to-menu-arrowup">Go up &#129061;</h5>
+      </a>
+      <div class="main-content">
+        <h1 class="header-title">Branching in Git</h1>
+        <div>
+          <ul>
+            <li><a href="#why-branching">Why is branching important?</a></li>
+            <li><a href="#commands">Git Commands for Branching</a></li>
+          </ul>
+        </div>
+        <article class="article-card">
+          <h2 id="why-branching">Why is branching important?</h2>
+          <p>
+           Branching allows developers to work on new features, bug fixes, or experiments without affecting the main project. It promotes collaboration, parallel development, and safer code integration.
+          </p>
+            <ol>
+              <li>Keeps the main branch (often called <code>main</code> or <code>master</code> ) clean and stable.</li>
+              <li>Reduces conflicts when multiple developers are working simultaneously.</li>
+              <li>Makes collaboration easier by isolating untested or experimental code.</li>
+              <li>Developers can merge their work back into the main branch only after review and testing.</li>
+            </ol>
+
+          <h2 id="commands">Git Commands for Branching</h2>
+          <h3>Git Commands for Branching</h3>
+
+          <p>Create a new branch:</p>
+          <pre><code>git checkout -b branch-name</code></pre>
+          <p>Switch to an existing branch:</p>
+          <pre><code>git checkout branch-name</code></pre>
+          <p>Merge your branch into main:</p>
+          <pre><code>git checkout main</code></pre>
+          <pre><code>git pull</code></pre>
+          <pre><code>git merge your-branch</code></pre>
+          <pre><code>git push</code></pre>
+          <p>Close (delete) a branch locally:</p>
+          <pre><code>git branch -d branch-name</code></pre>
+          <p>Delete a branch from the remote (e.g., GitHub):</p>
+          <pre><code>git push origin --delete branch-name</code></pre>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>&copy; Arash Sandra Sally 2025</h3>
+      </div>
+    </footer>
+  </body>
+</html>
+
