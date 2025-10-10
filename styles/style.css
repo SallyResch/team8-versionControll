@@ -143,14 +143,14 @@ a:hover {
   align-items: center;
   gap: 6px;
   text-decoration: none;
-  color: var(--secondary-color, #0077b6);
+  color: var(--secondary-color);
   font-size: 0.95rem;
   margin-left: 10px;
   transition: color 0.3s ease;
 }
 
 .email-link:hover {
-  color: #005f8a;
+  color: var(--accent-color);
 }
 
 .mail-icon {
