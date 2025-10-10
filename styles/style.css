@@ -150,7 +150,7 @@ a:hover {
 }
 
 .email-link:hover {
-  color: #005f8a;
+  color: var(--accent-color);
 }
 
 .mail-icon {
